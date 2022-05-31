@@ -1,0 +1,77 @@
+.contactpage {
+    padding: 150px 0 0;
+    position: relative;
+
+    .contact__form {
+        padding: 60px 0 270px 90px;
+    }
+
+    .contact__content {
+        max-width: 740px;
+        padding: 0 0 0 90px;
+    }
+
+    .contact__form-img {
+        bottom: -20px;
+    }
+
+    .contactpage__img {
+        img {
+            max-width: 508px;
+        }
+    }
+
+    .contact__form:after {
+        display: none;
+    }
+
+}
+
+
+//  ----------- RESPONSIVE ----------- //
+
+@media(max-width:1400px) {
+    .contactpage .contact__form {
+        padding: 60px 0 130px 90px;
+    }
+
+    .contactpage {
+        padding: 120px 0 0;
+        position: relative;
+    }
+}
+
+
+@media(max-width:991.8px) {
+    .contactpage {
+        padding: 70px 0 0;
+    }
+
+    .contactpage .contactpage__img {
+        text-align: center;
+        margin-bottom: 40px;
+
+        img {
+            max-width: 380px;
+        }
+    }
+
+    .contactpage .contact__content {
+        max-width: 740px;
+        padding: 0;
+    }
+
+    .contactpage .contact__form {
+        padding: 0 0 130px 0;
+    }
+}
+
+@media(max-width:767.8px) {
+    .contactpage {
+        padding: 50px 0 0;
+    }
+
+    .contactpage .contact__form {
+        padding: 0 0 110px 0;
+    }
+}

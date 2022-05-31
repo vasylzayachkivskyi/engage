@@ -1,0 +1,210 @@
+//  ------ terms, privacy ----------//
+
+.termspage {
+    padding: 130px 0 250px;
+    font-size: 16px;
+    line-height: 150%;
+    color: #0A2533;
+}
+
+.termspage__inner {
+    max-width: 1290px
+}
+
+.pagecontent__title {
+    @include bigtitle;
+    margin-bottom: 25px;
+}
+
+.pagecontent__subtitle {
+    margin-bottom: 25px;
+
+    p+p {
+        margin-top: 20px;
+    }
+
+    padding-left: 90px;
+}
+
+.termspage__content {
+    padding-left: 90px;
+
+    h2,
+    h3,
+    h4 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+        color: #0A2533;
+        margin-bottom: 15px;
+        margin-top: 25px;
+    }
+
+    p {
+        padding-left: 25px;
+
+        &+p {
+            margin-top: 25px;
+        }
+    }
+
+    ul {
+        padding-left: 50px;
+        margin-bottom: 35px;
+        margin-top: 25px;
+
+        li {
+            list-style: disc;
+            padding-left: 5px;
+
+            &+li {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+
+// ------ thank you page ------------//
+
+
+.thank__inner {
+    height: calc(100vh - 102px);
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thank__image {
+    img {
+        max-width: 633px;
+    }
+}
+
+.thank__content {
+    padding-left: 55px;
+    max-width: 390px;
+
+}
+
+.thank__title {
+    @include bigtitle;
+    margin-bottom: 22px;
+}
+
+.thank__subtitle {
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 28px;
+    color: #0A2533;
+
+}
+.thank__btn--mobile{
+    display: none;
+}
+
+
+//  ------ RESPONSIVE ------ //
+
+@media(max-width: 1600px) {
+    .termspage {
+        padding: 120px 0px 200px;
+    }
+}
+
+
+@media(max-width: 1200px) {
+    .pagecontent__subtitle {
+        padding-left: 40px;
+    }
+
+    .termspage__content {
+        padding-left: 40px;
+    }
+}
+
+
+@media(max-width: 991.8px) {
+    .termspage {
+        padding: 85px 0px 100px;
+    }
+
+    .thank__inner {
+            height: calc(100vh - 97px);
+            min-height: 600px;
+    }
+
+    .thank__image {
+        text-align: center;
+
+        img {
+            max-width: 400px;
+        }
+    }
+
+    .thank__content {
+        padding-left: 0;
+        max-width: 600px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .thank__btn--mobile{
+        display: flex;
+        margin: 0 auto;
+    }
+    .thank__btn{
+        display: none;
+    }
+    .thank__image {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width: 767.8px) {
+    .termspage__content {
+        padding-left: 0px;
+    }
+
+    .pagecontent__subtitle {
+        padding-left: 0px;
+    }
+
+    .termspage__content p {
+        padding-left: 0;
+    }
+
+    .termspage__content ul {
+        padding-left: 20px;
+    }
+
+    .pagecontent__subtitle p+p {
+        margin-top: 15px;
+    }
+
+    .pagecontent__title {
+        margin-bottom: 20px;
+    }
+
+    .termspage {
+        padding: 70px 0px 90px;
+    }
+
+    .pagecontent__subtitle {
+        margin-bottom: 15px;
+    }
+
+    .termspage__content p+p {
+        margin-top: 15px;
+    }
+
+    .termspage__content ul {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .termspage__content ul li+li {
+        margin-top: 15px;
+    }
+}

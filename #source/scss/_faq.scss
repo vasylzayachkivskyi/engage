@@ -1,0 +1,116 @@
+.faq__inner {
+    padding: 200px 0 300px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.faq__frame {
+    position: absolute;
+    max-width: 203px;
+    right: 0;
+    bottom: 0;
+    z-index: 22;
+    animation: 6s ease-in-out infinite levitate;
+}
+
+.faq__left,
+.faq__right {
+    width: 20%;
+    padding-top: 150px;
+}
+
+.faq__content {
+    width: 52%;
+}
+
+.faq__title {
+    text-align: center;
+    @include titlesect;
+    margin-bottom: 22px;
+}
+
+.faq__subtitle {
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: #0A2533;
+    margin-bottom: 67px;
+}
+
+
+
+
+// ------ RESPONSIVE ------- //
+
+@media (max-width: 1600px) {
+    .faq__inner {
+        padding: 160px 0 250px;
+    }
+
+    .faq__frame {
+        max-width: 170px;
+        bottom: -20px;
+    }
+}
+
+
+@media (max-width: 1400px) {
+    .faq__inner {
+        padding: 140px 0 201px;
+    }
+
+    .faq__subtitle {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .faq__inner {
+        padding: 100px 0 140px;
+    }
+
+    .faq__frame {
+        max-width: 120px;
+        right: 5%;
+    }
+}
+
+@media (max-width: 991.8px) {
+    .faq__content {
+        width: 65%;
+    }
+
+    .faq__left {
+        padding-top: 38%;
+    }
+
+    .faq__right {
+        padding-top: 5%;
+    }
+}
+
+@media (max-width: 767.8px) {
+    .faq__content {
+        width: 100%;
+    }
+
+    .faq__left,
+    .faq__right {
+        display: none;
+    }
+}
+
+
+@media (max-width: 575.8px) {
+    .faq__frame {
+        max-width: 100px;
+    }
+    .faq__inner {
+        padding: 50px 0 100px;
+    }
+    .faq__subtitle {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+}

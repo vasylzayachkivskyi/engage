@@ -1,0 +1,199 @@
+// -------------  about  ---------------- //
+
+
+.aboutwelcomescreen {
+    padding: 140px 0 120px;
+}
+
+.aboutwelcomescreen__content {
+    max-width: 636px;
+}
+
+.aboutwelcomescreen__title {
+    @include bigtitle;
+    margin-bottom: 28px;
+}
+
+.aboutwelcomescreen__text {
+    margin-bottom: 52px;
+
+    p {
+        font-size: 18px;
+        line-height: 150%;
+        color: #0A2533;
+
+        &+p {
+            padding-top: 10px;
+        }
+    }
+}
+
+.aboutwelcomescreen__img {
+    text-align: right;
+
+    img {
+        max-width: 633px;
+    }
+}
+
+
+
+// ---------------  section aboutinfo ------------------ //
+.aboutinfo {
+    padding-bottom: 130px;
+}
+
+.aboutinfo__section {
+    &+.aboutinfo__section {
+        margin-top: 130px;
+    }
+
+    &:nth-child(even) {
+        .row {
+            flex-direction: row-reverse;
+        }
+
+        .aboutinfo__img {
+            text-align: right;
+        }
+
+        .aboutinfo__content {
+            margin: 0 auto 0 0;
+        }
+    }
+
+    .aboutinfo__content {
+        margin: 0 0 0 auto;
+    }
+}
+
+.aboutinfo__img {
+    img {
+        max-width: 651px;
+    }
+}
+
+.aboutinfo__content {
+    max-width: 636px;
+
+    h2,
+    h3,
+    h4 {
+        @include titlesect;
+        margin-bottom: 42px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 150%;
+        color: #0A2533;
+
+        &+p {
+            margin-top: 42px;
+        }
+    }
+}
+
+
+
+//  --------------- RESPONSIVE  ----------------  //
+
+@media(max-width:1400px) {
+    .aboutinfo {
+        padding-bottom: 100px;
+    }
+
+    .aboutinfo__content {
+
+        h2,
+        h3,
+        h4 {
+            margin-bottom: 25px;
+        }
+    }
+
+    .aboutinfo__section+.aboutinfo__section {
+        margin-top: 100px;
+    }
+
+    .aboutinfo__content p {
+        font-size: 16px;
+
+        &+p {
+            margin-top: 25px;
+        }
+    }
+
+    .aboutwelcomescreen {
+        padding: 120px 0 90px;
+    }
+
+    .aboutwelcomescreen__text p {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:992px) {
+    .aboutinfo {
+        padding-bottom: 70px;
+    }
+
+    .aboutinfo__section+.aboutinfo__section {
+        margin-top: 50px;
+    }
+
+    .aboutinfo__content {
+        max-width: 100%;
+
+        p+p {
+            margin-top: 15px;
+        }
+    }
+
+    .aboutinfo__img {
+        text-align: center;
+        margin-bottom: 30px;
+
+        img {
+            max-width: 450px;
+        }
+    }
+
+    .aboutinfo__section:nth-child(2n) .aboutinfo__img {
+        text-align: center;
+    }
+
+    .aboutwelcomescreen__img {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .aboutwelcomescreen {
+        padding: 100px 0 70px;
+    }
+}
+
+@media(max-width:767.8px) {
+    .aboutwelcomescreen {
+        padding: 50px 0 50px;
+    }
+
+    .aboutinfo__section+.aboutinfo__section {
+        margin-top: 30px;
+    }
+
+    .aboutinfo {
+        padding-bottom: 45px;
+    }
+
+    .aboutinfo__content {
+
+        h2,
+        h3,
+        h4 {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+
