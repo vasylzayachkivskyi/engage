@@ -60,7 +60,7 @@
             border-right: 2px solid #0A2533;
             border-bottom: 2px solid #0A2533;
             transition: .3s;
-            
+
         }
 
         >ul {
@@ -112,6 +112,8 @@
 
 .header__social {
     margin-right: 46px;
+    display: flex;
+    align-items: center;
 
     svg path {
         transition: .3s;
@@ -120,6 +122,30 @@
     a:hover {
         svg path {
             fill: #f561ad;
+        }
+    }
+
+    a+a {
+        margin-left: 35px;
+    }
+    a{
+        display: flex;
+        align-items: center;
+    }
+    .logbtn {
+        &:hover{
+            span{
+                color: #f561ad;;
+            }
+        }
+        span {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 120%;
+            margin-right: 10px;
+            color: #0A2533;
+            transition: .3s;
+
         }
     }
 
@@ -148,10 +174,27 @@
 
 // ------- RESPONSIVE ------- //
 
+@media(max-width: 1600px) {
+
+    .header__social a+a {
+        margin-left: 30px;
+    }
+
+    .header__button a {
+        padding: 18px 35px;
+    }
+    .header__menu {
+        padding-left: 0;
+    }
+}
+
+
 @media(max-width: 1400px) {
+    .header__social .logbtn span {
+        font-size: 16px;
+    }
 
     .header__menu {
-        padding-left: 0px;
 
         a {
             font-size: 16px;
@@ -174,6 +217,25 @@
 }
 
 @media (max-width: 1200px) {
+    .header__social {
+        margin-right: 0;
+    }
+
+    .header__button a {
+        padding: 18px 28px;
+    }
+    .header__social a{
+        svg{
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .header__social a+a {
+        margin-left: 14px;
+    }
+
+
     .header__menu li+li {
         margin-left: 20px;
     }
@@ -236,7 +298,7 @@
 
 
         .mobile__menu-inner>ul {
-            margin-bottom: 90px;
+            margin-bottom: 70px;
 
             >li+li {
                 margin-top: 45px;
@@ -283,7 +345,7 @@
 
     .mobile__submenu,
     #menu-header-1 .menu-item-has-children {
-        
+
         ul {
             text-align: center;
 
@@ -302,23 +364,28 @@
 
             padding: 25px 0 0;
         }
-        >a{
+
+        >a {
             position: relative;
             transition: .3s;
+            padding-right: 20px;
 
         }
-        &.pink>a{
+
+        &.pink>a {
             color: #FF0B8A;
-            &:after{
+
+            &:after {
                 border-color: #FF0B8A;
             }
         }
+
         >a:after {
             content: '';
             transition: .3s;
             position: absolute;
             top: 25%;
-            right: -20px;
+            right: 0px;
             width: 8px;
             height: 8px;
             transform: rotate(45deg);
@@ -330,6 +397,26 @@
 
     .header__social--mobile {
         margin-bottom: 80px;
+
+        a+a {
+            margin-top: 40px;
+        }
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logbtn {
+            span {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 120%;
+                margin-right: 10px;
+                color: #0A2533;
+
+            }
+        }
     }
 
     .header__button--mobile {
@@ -349,6 +436,7 @@
     .header__social--mobile {
         margin-bottom: 50px;
     }
+
     .mobile__menu .mobile__menu-inner>ul {
         margin-bottom: 50px;
     }

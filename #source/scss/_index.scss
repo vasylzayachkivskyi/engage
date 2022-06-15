@@ -26,7 +26,7 @@
     line-height: 120%;
     color: #FF0B8A;
     margin-bottom: 27px;
-    height: 15px;
+    // height: 15px;
 }
 
 .welcomescreen__title {
@@ -244,7 +244,7 @@
 }
 
 .pricing__title {
-    color: #FFFFFF!important;
+    color: #FFFFFF !important;
     @include titlesect;
     padding-left: 90px;
     margin-bottom: 43px;
@@ -390,7 +390,24 @@
     display: none;
     font-size: 17px;
     line-height: 150%;
-    padding: 30px 50px 20px 20px;
+    margin: 34px 35px 34px 40px;
+    padding-left: 50px;
+    border-left: 1px solid #9BB3BE;
+    font-size: 16px;
+    line-height: 150%;
+    color: #0A2533;
+
+
+
+    li {
+        list-style: disc;
+        &::marker{
+            font-size: 12px;
+        }
+        &+li {
+            padding-top: 5px;
+        }
+    }
 }
 
 
@@ -573,14 +590,17 @@
     z-index: 33;
     animation: 6s ease-in-out infinite levitate;
 }
+
 @keyframes levitate {
-    0%{
+    0% {
         transform: translateY(0);
     }
-    50%{
+
+    50% {
         transform: translateY(-20px);
     }
-    100%{
+
+    100% {
         transform: translateY(0);
     }
 }
@@ -651,7 +671,7 @@
 }
 
 @media(max-width: 1400px) {
-   
+
     .info {
         padding: 60px 0 90px;
     }
@@ -751,9 +771,11 @@
     .welcomescreen__inner {
         min-height: 630px;
     }
+
     .welcomescreen__btn-down {
         display: none;
     }
+
     .welcomescreen__img {
         width: 560px;
     }
@@ -905,7 +927,6 @@
 
     .question__acordeon-body {
         font-size: 15px;
-        padding: 25px 50px 5px 20px;
     }
 
     .question__content {
@@ -1008,6 +1029,7 @@
     .welcomescreen__img {
         width: 100%;
     }
+
     .welcomescreen__img {
         margin: 0 0 20px;
     }
@@ -1047,20 +1069,23 @@
 
 
 
-.pen{
+.pen {
     animation: 3s ease-in-out infinite penanim;
     transform-origin: center;
 }
+
 @keyframes penanim {
 
-    0%{
+    0% {
         transform: translate(0);
     }
-    50%{
+
+    50% {
         transform: translate(2px, 5px);
     }
-    100%{
+
+    100% {
         transform: translate(0);
     }
-    
+
 }
